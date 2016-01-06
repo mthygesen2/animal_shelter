@@ -1,0 +1,65 @@
+.column {
+  width: 200px;
+  float: left;
+  margin: 25px;
+}
+img {
+  width: 200px;
+}
+.column h3 {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+h1 {
+  font-family: sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+.column p {
+  font-style: italic;
+  width: 200px;
+  padding: 2px;
+  border: 1px solid tan
+}
+p {
+  width: 150px;
+}
+body {
+  display: inline-block;
+}
+/*body {
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }
+
+}*/
+/* Phones */
+@media screen and (max-width: 480px) {
+  body {
+    background-color: tan;
+  }
+  .column p {
+    background-color: white;
+    border: none;
+  }
+  .column h3 {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px){
+  body {
+    background-color: gray;
+  }
+  .column p {
+    background-color: white;
+    border: none;
+  }
+  .column h3 {
+    color: black;
+  }
+}
