@@ -1,7 +1,10 @@
 .column {
   width: 200px;
   float: left;
-  margin: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 img {
   width: 200px;
@@ -10,7 +13,7 @@ img {
   color: red;
   text-align: center;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 23px;
 }
 h1 {
   font-family: sans-serif;
@@ -26,8 +29,13 @@ h1 {
 p {
   width: 150px;
 }
-body {
-  display: inline-block;
+div.container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+ display: block;
+  border: 1px solid #000;
+  /*margin-right: 10%;*/
 }
 /*body {
   position: absolute;
@@ -62,4 +70,26 @@ body {
   .column h3 {
     color: black;
   }
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  @page print {
+    page-break-after: avoid;
+    orphans: 5;
+  }
+  h1 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .h3 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+
 }
